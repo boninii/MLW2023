@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário</title>
+</head>
+<body>
+    <form method="post" border="1">
+        <fieldset>
+            <h1>Formulário</h1>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                Nome: <input type="text" name="nome"><br>
+                Endereço: <input type="text" name="endereco"><br>
+                Cidade: <input type="text" name="cidade"><br>
+                Estado:<select>
+                            <option>São Paulo</option>
+                            <option>Irrelevante</option>
+                        </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <p>Natureza do cargo</p>
+                <input type="radio" name="gerencia" checked><label>Gerencia</label>
+                <input type="radio" name="financeiro"><label>Financeiro</label>
+                <input type="radio" name="recepcao"><label>Recepção</label>
+                <input type="radio" name="administrativo"><label>Administrativo</label>
+                <input type="radio" name="juridico"><label>Jurídico</label>
+                
+                <p>Área de interesse</p>
+                <input type="checkbox" name="compt"><label>Computação</label>
+                <input type="checkbox" name="compt"><label>Biologia</label>
+                <input type="checkbox" name="compt"><label>Meio ambiente</label>
+                <input type="checkbox" name="compt"><label>Engenharia</label>
+                <input type="checkbox" name="compt"><label>História</label><br><br>
+
+                Mini-currículo: <textarea name="area" cols="50" rows="5"></textarea>
+            </fieldset>
+            <br><br>
+            <button>Enviar</button>
+            <button>Limpar</button>
+            <br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
